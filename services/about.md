@@ -6,3 +6,15 @@ in simple words, a service is a method to expose our application that is running
 
 The service api, part of kubernetes, is an abstraction to help expose groups of Pods over a network.
 
+
+
+
+#Type of Service
+
+a. NodePort
+b. ClusterIP
+c. LoadBalance
+d. ExternalName
+
+
+
