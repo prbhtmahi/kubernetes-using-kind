@@ -1,0 +1,22 @@
+Statci Pod**********
+
+
+
+In kubernetes , a static pod is a concept wherein we can deploy a pod that is not managed by the API server.
+
+
+
+Static pods are directly managed by the kubelet component. 
+The kubelet service is deployed with the configuration path where we can add the pod manifest for the kubelet to deploy.
+
+
+When kubelet deploys a static pod, it creates a mirror pod in the api server.
+
+
+use case of static pod:***********
+
+Well, it is primarily used for cluster bootstrapping purposes. Meaning to start the cluster components like api server,
+  controller manager etc.  
+
+  For ex: when we deploy a kubeadm cluster, it creates all the cluster component using the static pod manifests located in the
+     /etc/kubernetes/manifest  location.
