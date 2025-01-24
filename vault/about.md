@@ -30,3 +30,16 @@ HashiCorp Vault is an identity-based secrets and encryption management system. I
    b. ServiceAccounts: kubernetes serviceAccounts are identities assigned to entities such as pods to enable their interation with the kubernetes APIs using the role's permissions.
 
    c. ClusterRoleBinding: ClusterRoleBinding are entities that provide roles to accounts i.e. they grant permission to service accounts.
+
+
+
+
+  **************
+
+  First create a namespace:
+
+  kubectl create namespace <namespace-name>
+
+  then create rbac.yaml for required auth.
+
+  
